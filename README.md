@@ -4,7 +4,7 @@ Casbin Redis Adapter is an adapter for [Casbin](https://github.com/casbin/casbin
 
 ## Installation
 
-    go get github.com/mlsen/casbin-redis-adapter
+    go get github.com/cctogo/casbin-redis-adapter
 
 ## Usage
 
@@ -13,7 +13,7 @@ package main
 
 import (
 	"github.com/casbin/casbin/v2"
-	"github.com/mlsen/casbin-redis-adapter/v2"
+	"github.com/cctogo/casbin-redis-adapter/v2"
 )
 
 func main() {
@@ -48,7 +48,7 @@ package main
 import (
 	"github.com/casbin/casbin/v2"
 	"github.com/go-redis/redis/v9"
-	"github.com/mlsen/casbin-redis-adapter/v2"
+	"github.com/cctogo/casbin-redis-adapter/v2"
 )
 
 func main() {
@@ -76,4 +76,4 @@ func main() {
 ## License
 
 This project is licensed under
-the [Apache 2.0 license](https://github.com/mlsen/casbin-redis-adapter/blob/master/LICENSE).
+the [Apache 2.0 license](https://github.com/cctogo/casbin-redis-adapter/blob/master/LICENSE).
