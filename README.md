@@ -47,7 +47,7 @@ package main
 
 import (
 	"github.com/casbin/casbin/v2"
-	"github.com/go-redis/redis/v8"
+	"github.com/go-redis/redis/v9"
 	"github.com/mlsen/casbin-redis-adapter/v2"
 )
 

@@ -6,13 +6,12 @@ import (
 	"testing"
 
 	"github.com/casbin/casbin/v2/model"
+	redisadapter "github.com/mlsen/casbin-redis-adapter/v2"
 
 	"github.com/casbin/casbin/v2"
 
-	redisadapter "github.com/mlsen/casbin-redis-adapter/v2"
-
-	"github.com/go-redis/redis/v8"
 	"github.com/ory/dockertest/v3"
+	"github.com/redis/go-redis/v9"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

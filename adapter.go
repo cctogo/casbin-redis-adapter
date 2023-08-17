@@ -7,11 +7,11 @@ import (
 	"strings"
 
 	"github.com/casbin/casbin/v2/util"
+	"github.com/redis/go-redis/v9"
 
 	"github.com/casbin/casbin/v2/persist"
 
 	"github.com/casbin/casbin/v2/model"
-	"github.com/go-redis/redis/v8"
 )
 
 const (
@@ -54,7 +54,7 @@ func (a *Adapter) LoadPolicy(model model.Model) (err error) {
 	return a.loadPolicy(ctx, model, persist.LoadPolicyArray)
 }
 
-func (a *Adapter) loadPolicy(ctx context.Context, model model.Model, handler func([]string, model.Model)) (err error) {
+func (a *Adapter) loadPolicy(ctx context.Context, model model.Model, handler func([]string, model.Model) error) (err error) {
 	// 0, -1 fetches all entries from the list
 	rules, err := a.redisCli.LRange(ctx, PolicyKey, 0, -1).Result()
 	if err != nil {
