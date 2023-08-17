@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/casbin/casbin/v2/model"
-	redisadapter "github.com/cctogo/casbin-redis-adapter/v2"
+	redisadapter "github.com/cctogo/casbin-redis-adapter"
 
 	"github.com/casbin/casbin/v2"
 
